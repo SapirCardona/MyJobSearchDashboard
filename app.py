@@ -2,15 +2,16 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+
+# Page configuration
+st.set_page_config("My Job Search Dashboard", layout="wide")
+st.title("My Job Search Dashboard")
+
 st.markdown("""
 <div style='text-align:center; margin-top:20px;'>
   <img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWZ2aDl6eWdtZG13YTFmd3lqeXJ6emhncWFpa3Z4cWFvYjl1MHpsMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OTpXM142KtTJ6/giphy.gif' alt='job gif' style='max-width:100%; height:auto;'>
 </div>
 """, unsafe_allow_html=True)
-
-# Page configuration
-st.set_page_config("My Job Search Dashboard", layout="wide")
-st.title("My Job Search Dashboard")
 
 # File uploader
 uploaded_file = st.file_uploader("Upload your job tracker Excel file", type=["xlsx"])
